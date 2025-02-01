@@ -1,28 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 48, in script
-    y "Χαῖρε! I'm Yeetus"
-  File "game/script.rpy", line 48, in script
-    y "Χαῖρε! I'm Yeetus"
-Exception: Could not find font 'gui/font/rolemodel.ttf'.
+  File "game/script.rpy", line 57, in script
+    p "{font=fonts/DejaVuSans.ttf}{size=+0}Πόσα τρίγωνα ἔχει τὸ ἑξάγωνον{/size}{/font}"
+Exception: Could not find font 'fonts/DejaVuSans.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\main.py", line 652, in main
-    run(restart)
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\main.py", line 148, in run
-    renpy.execution.run_context(True)
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\execution.py", line 958, in run_context
-    context.run()
-  File "game/script.rpy", line 48, in script
-    y "Χαῖρε! I'm Yeetus"
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/script.rpy", line 48, in script
-    y "Χαῖρε! I'm Yeetus"
+  File "game/script.rpy", line 57, in script
+    p "{font=fonts/DejaVuSans.ttf}{size=+0}Πόσα τρίγωνα ἔχει τὸ ἑξάγωνον{/size}{/font}"
   File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
     Say.execute(self)
   File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 621, in execute
@@ -83,9 +70,9 @@ Full traceback:
     face = load_face(fn, shaper)
   File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\text\font.py", line 673, in load_face
     raise Exception("Could not find font {0!r}.".format(orig_fn))
-Exception: Could not find font 'gui/font/rolemodel.ttf'.
+Exception: Could not find font 'fonts/DejaVuSans.ttf'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 Greek Maths Olympiad 1.0
-Sat Feb  1 14:32:48 2025
+Sat Feb  1 16:42:27 2025
