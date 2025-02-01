@@ -13,7 +13,7 @@ define q = Character("Greek Translator")
 
 transform elevated_center:
     xalign 0.5
-    yalign 0.53
+    yalign 0.533
 
 transform left_side:
     xalign 0.25  
@@ -45,7 +45,7 @@ label start:
 
     # These display lines of dialogue.
 
-    y "Χαῖρε! I'm Yeetus"
+    y "Chaire! I'm Yeetus"
 
     y "Welcome to the Greek Mathematics Olympiad, a most prestigious event that occurs once every 40 years"
 
@@ -62,7 +62,7 @@ label start:
     show yeet happy at elevated_center
     with dissolve
     
-    y "Καλή τύχη! Good luck to all our competitors. May the most worthy mathematician emerge victorious"
+    y "Kali tychi! Good luck to all our competitors. May the most worthy mathematician emerge victorious"
     
     hide yeet
     scene bg menu1
@@ -108,7 +108,7 @@ label start:
     show larme at elevated_center
     with dissolve
 
-    l "Wàng jūn ān"
+    l "Wang jun an"
 
     l "I am an advisor to the military general. I see war like a chessboard, planning multiple moves ahead"
 
@@ -153,15 +153,15 @@ label start:
     show eviru at elevated_center
     with dissolve
 
-    e "Āyubōvan"
+    e "Ayubovan"
+    
+    e "Maths is poetry"
 
     e "I express my ideas in a metaphorical language, replying in riddles because I believe that equations reveal the rhythm of existence"
 
     e "You may often see me scribbling equations in the sand, composing verses about nature and the heavens..."
 
     e "...and debating the Greek philosophers about the deeper meaning of mathematics"
-
-    e "Maths is poetry"
 
     hide edhruvi
     scene bg hall1

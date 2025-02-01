@@ -1,54 +1,91 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('gui/cursor/cursor_default.png') at 0x0000000005914e20>:
-  File "renpy/common/00start.rpy", line 211, in script call
-    call _gl_test
-  File "renpy/common/00gltest.rpy", line 390, in script
-    $ __gl_test()
-  File "renpy/common/00gltest.rpy", line 390, in <module>
-    $ __gl_test()
-  File "renpy/common/00gltest.rpy", line 319, in _m1_00gltest__gl_test
-    _gl_performance_test()
-  File "renpy/common/00gltest.rpy", line 342, in _gl_performance_test
-    ui.interact(suppress_underlay=True, suppress_overlay=True)
-OSError: Couldn't find file 'gui/cursor/cursor_default.png'.
+While running game code:
+  File "game/script.rpy", line 48, in script
+    y "Χαῖρε! I'm Yeetus"
+  File "game/script.rpy", line 48, in script
+    y "Χαῖρε! I'm Yeetus"
+Exception: Could not find font 'gui/font/rolemodel.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 211, in script call
-    call _gl_test
-  File "renpy/common/00gltest.rpy", line 390, in script
-    $ __gl_test()
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00gltest.rpy", line 390, in <module>
-    $ __gl_test()
-  File "renpy/common/00gltest.rpy", line 319, in _m1_00gltest__gl_test
-    _gl_performance_test()
-  File "renpy/common/00gltest.rpy", line 342, in _gl_performance_test
-    ui.interact(suppress_underlay=True, suppress_overlay=True)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\execution.py", line 958, in run_context
+    context.run()
+  File "game/script.rpy", line 48, in script
+    y "Χαῖρε! I'm Yeetus"
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "game/script.rpy", line 48, in script
+    y "Χαῖρε! I'm Yeetus"
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 621, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
   File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ui.py", line 301, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\core.py", line 2172, in interact
-    self.start()
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\core.py", line 1063, in start
-    surf = renpy.display.im.load_surface(fn)
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\im.py", line 2109, in load_surface
-    return cache.get(image(im))
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\im.py", line 304, in get
-    surf = image.load()
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\im.py", line 788, in load
-    raise e
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\im.py", line 738, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\loader.py", line 686, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'gui/cursor/cursor_default.png'.
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\core.py", line 2879, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\core.py", line 1381, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\screen.py", line 752, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\layout.py", line 1457, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\text\text.py", line 2600, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\text\text.py", line 767, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\text\text.py", line 340, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample, self.shaper, self.instance, self.axis)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\text\font.py", line 745, in get_font
+    face = load_face(fn, shaper)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\text\font.py", line 673, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font 'gui/font/rolemodel.ttf'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 Greek Maths Olympiad 1.0
-Sat Feb  1 13:49:19 2025
+Sat Feb  1 14:32:48 2025
