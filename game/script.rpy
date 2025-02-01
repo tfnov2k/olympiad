@@ -86,7 +86,6 @@ label start:
 
     hide yeet
     show alex at elevated_center
-    with dissolve
 
     a "Bonjour"
 
@@ -106,7 +105,6 @@ label start:
 
     hide yeet
     show larme at elevated_center
-    with dissolve
 
     l "Wang jun an"
 
@@ -127,7 +125,6 @@ label start:
 
     hide yeet
     show seira at elevated_center
-    with dissolve
 
     s "Ais"
     
@@ -151,7 +148,6 @@ label start:
 
     hide yeet
     show eviru at elevated_center
-    with dissolve
 
     e "Ayubovan"
     
@@ -202,7 +198,7 @@ label alexandre:
 
     p "Here is your question -"
 
-    p "Πόσα τρίγωνα ἔχει τὸ ἑξάγωνον"
+    p "{font=DejaVuSans.ttf}Πόσα τρίγωνα ἔχει τὸ ἑξάγωνον{/font}"
 
     hide philosopher2
     show philosopher1 at elevated_center
@@ -239,7 +235,7 @@ label stellaris:
 
     p "Here is your question -"
 
-    p "Πόσας γραμμὰς συμμετρίας ἔχει τὸ ἰσόπλευρον τρίγωνον"
+    "{font=DejaVuSans.ttf}Πόσας γραμμὰς συμμετρίας ἔχει τὸ ἰσόπλευρον τρίγωνον{/font}"
 
     hide philosopher2
     show philosopher1 at elevated_center
@@ -276,7 +272,7 @@ label oshimshim:
 
     p "Here is your question -"
 
-    p "Τίς ἐστιν ὁ ἑπόμενος ἀριθμὸς ἐν τῇ ἀκολουθίᾳ: α΄, α΄, β΄, γ΄, ε΄, η΄, ..."
+    "{font=DejaVuSans.ttf}Τίς ἐστιν ὁ ἑπόμενος ἀριθμὸς ἐν τῇ ἀκολουθίᾳ: α΄, α΄, β΄, γ΄, ε΄, η΄, ...{/font}"
 
     hide philosopher2
     show philosopher1 at elevated_center
@@ -313,7 +309,7 @@ label edhruvi:
 
     p "Here is your question -"
 
-    p "Τί ἐστι τὸ ἐμβαδὸν ὀρθογωνίου μῆκος ἓξ καὶ πλάτος τέτταρα ἔχοντος"
+    "{font=DejaVuSans.ttf}Τί ἐστι τὸ ἐμβαδὸν ὀρθογωνίου μῆκος ἓξ καὶ πλάτος τέτταρα ἔχοντος{/font}"
 
     hide philosopher2
     show philosopher1 at elevated_center
