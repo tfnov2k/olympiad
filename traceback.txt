@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 201, in script
+    p "Here is your question"
+Exception: Sayer 'p' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 201, in script
+    p "Here is your question"
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 581, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 470, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'p' is not defined.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.4.24120703
+Greek Maths Olympiad 1.0
+Sat Feb  1 02:20:27 2025

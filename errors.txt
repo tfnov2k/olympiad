@@ -1,0 +1,26 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 71: screen expects a non-empty block.
+    screen notify(message):
+                           ^
+
+File "game/script.rpy", line 72: expected statement.
+    zorder 100
+              ^
+
+File "game/script.rpy", line 73: end of line expected.
+    text "[message!tq]" at _notify_transform
+                        ^
+
+File "game/script.rpy", line 74: expected statement.
+    timer 3.25 action Hide('notify')
+           ^
+
+File "game/script.rpy", line 83: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    scene bg yeet 
+             ^
+
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Sat Feb  1 01:34:35 2025
