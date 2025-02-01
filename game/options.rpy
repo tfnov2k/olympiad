@@ -152,6 +152,21 @@ define config.save_directory = "GreekMathsOlympiad-1738341810"
 
 define config.window_icon = "gui/window_icon.png"
 
+define config.mouse = {
+    "default": [("gui/cursors/cursor_default.png", 0, 0)],
+    "say": [("gui/cursors/cursor_say.png", 0, 0)],
+    "button": [("gui/cursors/cursor_button.png", 0, 0)],
+    "busy": [
+        ("gui/cursors/cursor_busy1.png", 0, 0),
+        ("gui/cursors/cursor_busy2.png", 0, 0),
+        ("gui/cursors/cursor_busy3.png", 0, 0),
+        ("gui/cursors/cursor_busy4.png", 0, 0),
+        ("gui/cursors/cursor_busy5.png", 0, 0)
+    ]
+}
+
+
+
 
 ## Build configuration #########################################################
 ##

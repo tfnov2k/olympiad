@@ -1,24 +1,54 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 201, in script
-    p "Here is your question"
-Exception: Sayer 'p' is not defined.
+While loading <renpy.display.im.Image object ('gui/cursor/cursor_default.png') at 0x0000000005914e20>:
+  File "renpy/common/00start.rpy", line 211, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 390, in script
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 390, in <module>
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 319, in _m1_00gltest__gl_test
+    _gl_performance_test()
+  File "renpy/common/00gltest.rpy", line 342, in _gl_performance_test
+    ui.interact(suppress_underlay=True, suppress_overlay=True)
+OSError: Couldn't find file 'gui/cursor/cursor_default.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 201, in script
-    p "Here is your question"
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
-    Say.execute(self)
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 581, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 470, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'p' is not defined.
+  File "renpy/common/00start.rpy", line 211, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 390, in script
+    $ __gl_test()
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gltest.rpy", line 390, in <module>
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 319, in _m1_00gltest__gl_test
+    _gl_performance_test()
+  File "renpy/common/00gltest.rpy", line 342, in _gl_performance_test
+    ui.interact(suppress_underlay=True, suppress_overlay=True)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\core.py", line 2172, in interact
+    self.start()
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\core.py", line 1063, in start
+    surf = renpy.display.im.load_surface(fn)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\im.py", line 2109, in load_surface
+    return cache.get(image(im))
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\im.py", line 304, in get
+    surf = image.load()
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\im.py", line 788, in load
+    raise e
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\im.py", line 738, in load
+    filelike = renpy.loader.load(self.filename, directory="images")
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\loader.py", line 686, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'gui/cursor/cursor_default.png'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 Greek Maths Olympiad 1.0
-Sat Feb  1 02:20:27 2025
+Sat Feb  1 13:49:19 2025
