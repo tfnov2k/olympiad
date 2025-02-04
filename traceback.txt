@@ -1,0 +1,56 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/screens.rpy", line 287, in analyze_screen
+    screen navigation():
+  File "game/screens.rpy", line 287, in analyze
+    screen navigation():
+  File "game/screens.rpy", line 287, in analyze
+    screen navigation():
+  File "game/screens.rpy", line 289, in analyze
+    vbox:
+  File "game/screens.rpy", line 289, in analyze
+    vbox:
+  File "game/screens.rpy", line 292, in analyze
+    if if renpy.get_screen("main_menu"):
+SyntaxError: invalid syntax (game/screens.rpy, line 292)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\main.py", line 86, in run
+    renpy.display.screen.analyze_screens()
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\display\screen.py", line 994, in analyze_screens
+    s.ast.analyze_screen()
+  File "game/screens.rpy", line 287, in analyze_screen
+    screen navigation():
+  File "game/screens.rpy", line 287, in analyze
+    screen navigation():
+  File "game/screens.rpy", line 287, in analyze
+    screen navigation():
+  File "game/screens.rpy", line 289, in analyze
+    vbox:
+  File "game/screens.rpy", line 289, in analyze
+    vbox:
+  File "game/screens.rpy", line 292, in analyze
+    if if renpy.get_screen("main_menu"):
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\py3analysis.py", line 559, in is_constant_expr
+    node, literal = ccache.ast_eval_literal(expr)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\py3analysis.py", line 785, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "C:\Users\User\OneDrive\Documents\My Games\renpy-8.3.4-sdk\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/screens.rpy, line 292)
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.4.24120703
+Greek Maths Olympiad 1.0
+Sat Feb  1 22:43:43 2025
